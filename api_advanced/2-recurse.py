@@ -33,7 +33,6 @@ def recurse(subreddit, hot_list=[], after=None):
 
     if response.status_code != 200:
         return None
-    else:return okay
 
     reddit = response.json()
     hot_posts = reddit['data']['children']
